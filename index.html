@@ -7,66 +7,31 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <label for="toggle" class="inline-block cursor-pointer toggle-switch">
-      <input
-        type="checkbox"
-        name=""
-        id="toggle"
-        class="darkmode-input hidden"
-      />
-      <div
-        class="w-[100px] h-[40px] border border-[#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] transition-colors"
-      >
-        <div
-          class="w-7 h-7 bg-[#ccc] rounded-full transition-transform darkmode-spinner"
-        ></div>
-      </div>
-    </label>
-    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
-      <div
-        class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]"
-      >
-        <img
-          src="https://uxwing.com/wp-content/themes/uxwing/download/hand-gestures/good-icon.png"
-          alt=""
-          class="mb-5 max-w-[100px] mx-auto"
-        />
-        <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">
-          Recommendation
-        </h3>
-        <div
-          class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white"
+    <header class="pt-7 mb-11">
+      <div class="flex items-center justify-between container mx-auto">
+        <a href="#" class="text-xl font-semibold flex items-center gap-2.5">
+          <img src="./img1.png" alt="" class="w-9 h-9" />
+          <span>MicPro</span>
+        </a>
+        <ul class="flex items-center justify-center gap-10">
+          <li>
+            <a href="#" class="font-medium">Home</a>
+          </li>
+          <li><a href="#" class="font-medium">Services</a></li>
+          <li><a href="#" class="font-medium">Expertise</a></li>
+          <li><a href="#" class="font-medium">Cases</a></li>
+          <li><a href="#" class="font-medium">Pricing</a></li>
+          <li><a href="#" class="font-medium">Company</a></li>
+        </ul>
+        <button
+          class="font-medium leading-normal py-4 px-12 rounded-full text-white bg-primary"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-          facilis vero quod natus molestiae autem provident nam corporis sint
-          accusamus excepturi at in, temporibus architecto ad voluptatibus
-          maxime. Tenetur!
-        </div>
+          Start a Project
+        </button>
       </div>
-    </div>
-    <script>
-      const toggleSwitch = document.querySelector(
-        '.toggle-switch input[type="checkbox"]'
-      );
-      const currentTheme = localStorage.getItem("theme");
-      if (currentTheme) {
-        document.documentElement.setAttribute("class", currentTheme);
-        if (currentTheme === "dark") {
-          toggleSwitch.checked = true;
-        }
-      }
-      function switchTheme(e) {
-        if (e.target.checked) {
-          document.documentElement.setAttribute("class", "dark");
-          localStorage.setItem("theme", "dark");
-        } else {
-          document.documentElement.setAttribute("class", "light");
-          localStorage.setItem("theme", "light");
-        }
-      }
-      toggleSwitch.addEventListener("change", switchTheme);
-    </script>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
