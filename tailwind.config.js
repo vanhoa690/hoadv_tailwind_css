@@ -4,11 +4,13 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: ["./index.html"],
   theme: {
-    extend: {
+    theme: {
       screens: {
         xs: "480px",
         ...defaultTheme.screens,
       },
+    },
+    extend: {
       fontFamily: {
         Karla: ["Karla", "sans-serif"],
       },
