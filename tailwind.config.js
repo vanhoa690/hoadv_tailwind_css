@@ -3,6 +3,9 @@ export default {
   content: ["./index.html"],
   theme: {
     extend: {
+      screens: {
+        xs: "480px",
+      },
       fontFamily: {
         Karla: ["Karla", "sans-serif"],
       },
