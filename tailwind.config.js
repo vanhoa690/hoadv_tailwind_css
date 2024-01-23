@@ -1,20 +1,25 @@
 export default {
   content: ["./index.html"],
   theme: {
-    // extend: {
-    //   spacing: {
-    //     big: "48rem",
-    //   },
-    // },
-    // screens: {
-    //   sm: "480px",
-    //   md: "768px",
-    //   lg: "1024px",
-    //   xl: "1280px",
-    // },
-    // fontFamily: {
-    //   nunito: ["Nunito", "sans-serif"],
-    // },
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+    },
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    extend: {
+      fontFamily: {
+        poppins: "'Poppins', sans-serif",
+        roboto: "'Roboto', sans-serif",
+      },
+      colors: {
+        primary: "#FD3D57",
+      },
+    },
   },
   plugins: [],
 };
