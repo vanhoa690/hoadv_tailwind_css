@@ -1,5 +1,5 @@
 export default {
-  content: ["./index.html"],
+  content: ["./*.html"],
   theme: {
     screens: {
       sm: "576px",
@@ -24,7 +24,8 @@ export default {
   variants: {
     extend: {
       display: ["group-hover"],
+      visibility: ["group-hover"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
