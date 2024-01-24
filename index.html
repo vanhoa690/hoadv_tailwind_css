@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <!-- Header -->
     <header class="py-4 shadow-sm bg-white">
@@ -76,5 +77,107 @@
         </div>
       </div>
     </header>
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+      <div class="flex container">
+        <div
+          class="px-8 py-4 bg-primary flex items-center cursor-pointer group relative"
+        >
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="ml-2 capitalize text-white">All Categories</span>
+
+          <div
+            class="w-full absolute left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+          >
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              ><img
+                src="./public/images/icons/bed.svg"
+                alt="icon bedroom"
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 tg600 text-sm">Bedroom</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              ><img
+                src="./public/images/icons/sofa.svg"
+                alt="icon sofa"
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 tg600 text-sm">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              ><img
+                src="./public/images/icons/office.svg"
+                alt="icon Office"
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 tg600 text-sm">Office</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              ><img
+                src="./public/images/icons/outdoor-cafe.svg"
+                alt="icon Outdoor"
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 tg600 text-sm">Outdoor</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center justify-between flex-grow pl-2">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >Home</a
+            >
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >Shop</a
+            >
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >About us</a
+            >
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >Contact us</a
+            >
+          </div>
+          <a href="#" class="text-gray-200 hover:text-white transition"
+            >Login/Register</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div
+      class="bg-cover bg-no-repeat bg-center py-36"
+      style="background-image: url('./public/images/banner-bg.jpg')"
+    >
+      <div class="container">
+        <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
+          Lorem ipsum dolor sit <br />
+          amet consectetur
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Excepturi dolore atque harum, veniam quae dolores, perspiciatis.
+        </p>
+        <div class="mt-12">
+          <a
+            href="#"
+            class="px-8 py-3 bg-primary border border-primary text-white font-medium rounded-md hover:bg-transparent hover:text-primary transition"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </div>
   </body>
 </html>
